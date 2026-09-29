@@ -52,6 +52,17 @@
   </main>
   <footer><span>创始人 IP 情绪风格测评</span><span>Make your signal unmistakable.</span></footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+  <div id="shareModal" class="share-modal hidden" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+    <div class="share-backdrop" data-close-share=""></div>
+    <div class="share-dialog">
+      <button id="closeShareButton" class="share-close" aria-label="关闭分享弹窗">×</button>
+      <p class="eyebrow">SHARE THIS TEST</p>
+      <h2 id="shareTitle">把这份测评发给你的学员</h2>
+      <p class="share-description">复制网址直接发送，或生成二维码让用户扫码进入。</p>
+      <div class="share-url-row"><input id="shareUrlInput" readonly="" aria-label="测评网址"><button id="copyShareButton" class="button button-primary">复制网址</button></div>
+      <div class="qr-panel"><div class="qr-frame"><img id="shareQrImage" alt="测评网址二维码"></div><div><strong>扫码开始测评</strong><p>适合放在海报、社群公告或课程资料里。</p><button id="downloadQrButton" class="button button-ghost">保存二维码</button></div></div>
+    </div>
+  </div>
+  <script src="app.js?v=20260929-share"></script>
 
 </body></html>
